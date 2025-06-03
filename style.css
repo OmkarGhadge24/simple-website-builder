@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins";
+  background-color: #ebebeb;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 7vh;
+  background-color: #6e6e6e;
+  color: #fff;
+  text-align: center;
+  line-height: 7vh;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.build-container {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+}
+
+.side-bar {
+  width: 20%;
+  background-color: #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 7vh;
+  left: 0;
+  height: 93vh;
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.side-bar h2 {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.draggable-element {
+  background: #dadada;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.draggable-element h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.draggable-element i {
+  margin-left: 50px;
+}
+
+.canvas-container {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 7vh;
+  height: calc(100vh - 7vh);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  width: 94%;
+  background: #fff;
+  border: 2px dashed #ccc;
+  padding: 0.2rem;
+  min-height: 500px;
+  position: relative;
+  overflow: auto;
+}
+
+.canvas-container h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.properties h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 9vh;
+    line-height: 9vh;
+  }
+
+  .build-container {
+    height: 91vh;
+  }
+
+  .side-bar {
+    width: 25%;
+    top: 9vh;
+  }
+
+  .side-bar h2 {
+    font-size: 1rem;
+  }
+
+  .draggable-element {
+    width: 40%;
+    border-radius: 8px;
+  }
+
+  .draggable-element i {
+    margin-left: 0px;
+  }
+
+  .draggable-element h4 {
+    display: none;
+  }
+
+  .canvas-element {
+    width: 75%;
+  }
+
+  .canvas-container {
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 9vh;
+  }
+}

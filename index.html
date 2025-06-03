@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navigation Bar -->
+        <div class="navbar">Simple Website Builder</div>
+        <!-- Website Builder -->
+        <div class="build-container">
+            <div class="side-bar">
+                <h2>Elements</h2>
+                <div draggable="true" class="draggable-element">
+                    <i class="ri-image-line"></i>
+                    <h4>Image</h4>
+                </div>
+                <div draggable="true" class="draggable-element">
+                    <i class="ri-rectangle-line"></i>
+                    <h4>Button</h4>
+                </div>
+                <div draggable="true" class="draggable-element">
+                    <i class="ri-text-snippet"></i>
+                    <h4>Text</h4>
+                </div>
+                <div draggable="true" class="draggable-element">
+                    <i class="ri-video-line"></i>
+                    <h4>Video</h4>
+                </div>
+            </div>
+            <div class="canvas-container">
+                <h3>Drop Elements Here</h3>
+                <div class="canvas" id="canvas"></div>
+                <div class="properties">
+                    <h3>Edit Properties</h3>
+                    <form id="form-perperties"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -53,10 +53,16 @@ function showFormProperties(elem) {
       }" ></div>`;
   }
   if (Name === "IMG") {
-    form.innerHTML += `<div class="form-element" > <label class="form-label" >Source : </label><input class="form-input" name="src" type="text" value="${elem.src}" ></div>`;
+    form.innerHTML += `<div class="form-element" > <label class="form-label" >Image URL : </label><input class="form-input" name="src" type="text" value="${elem.src}" ></div>`;
   }
   if (Name === "BUTTON" || Name === "P") {
     form.innerHTML += `<div class="form-element" > <label class="form-label" >Text : </label><input class="form-input" name="text" type="text" value="${elem.innerText}" ></div>`;
+    form.innerHTML += `<div class="form-element" > <label class="form-label" >Font Size : </label><input class="form-input" name="font-size" type="text" value="${elem.style.fontSize}" ></div>`;
+    form.innerHTML += `<div class="form-element" > <label class="form-label" >Font Color : </label><input class="form-input" name="font-color" type="text" value="${elem.style.color}" ></div>`;
+    form.innerHTML += `<div class="form-element" > 
+    <label class="form-label" >Background Color : </label>
+    <input class="form-input" name="background-color" type="text" value="${elem.style.backgroundColor}" >
+  </div>`;
   }
 }
 
@@ -99,6 +105,15 @@ form.addEventListener("input", (e) => {
       break;
     case "text":
       selectedElement.innerText = value;
+      break;
+    case "font-size":
+      selectedElement.style.fontSize = value;
+      break;
+    case "font-color":
+      selectedElement.style.color = value;
+      break;
+    case "background-color":
+      selectedElement.style.backgroundColor = value;
       break;
   }
 });

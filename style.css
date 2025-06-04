@@ -127,7 +127,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 15px;
-  width: 600px;
+  width: 800px;
   padding: 20px;
 }
 
@@ -200,7 +200,18 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    width: 300px;
+    width: 280px;
     padding: 10px;
+  }
+
+  .form-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .form-input {
+    padding: 6px 4px;
+    font-size: 12px;
+    border: 1px solid #bcc2ca;
   }
 }

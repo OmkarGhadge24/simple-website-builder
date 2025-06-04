@@ -20,8 +20,8 @@ body {
 
 .navbar {
   height: 7vh;
-  background-color: #6e6e6e;
-  color: #fff;
+  background-color: #5a5a5a;
+  color: #ffffff;
   text-align: center;
   line-height: 7vh;
   font-size: 1.2rem;
@@ -40,7 +40,7 @@ body {
 
 .side-bar {
   width: 20%;
-  background-color: #bbbbbb;
+  background-color: #d6d6db;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +59,7 @@ body {
 }
 
 .draggable-element {
-  background: #dadada;
+  background: #ffffff;
   width: 80%;
   border-radius: 10px;
   padding: 10px;
@@ -68,15 +68,18 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  border: 1px solid #bdbdbd;
 }
 
 .draggable-element h4 {
   font-size: 1rem;
   font-weight: 500;
+  color: #111827;
 }
 
 .draggable-element i {
   margin-left: 50px;
+  color: #4b64f2;
 }
 
 .canvas-container {
@@ -92,8 +95,8 @@ body {
 
 .canvas {
   width: 94%;
-  background: #fff;
-  border: 2px dashed #ccc;
+  background: #ffffff;
+  border: 2px dashed #9ca3af;
   padding: 0.2rem;
   min-height: 500px;
   position: relative;
@@ -104,6 +107,7 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   padding: 10px;
+  color: #111827;
 }
 
 .properties {
@@ -116,6 +120,37 @@ body {
 .properties h3 {
   font-size: 1.1rem;
   font-weight: 400;
+  color: #111827;
+}
+
+#form-properties {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 15px;
+  width: 600px;
+  padding: 20px;
+}
+
+.form-element {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.form-input {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -158,5 +193,14 @@ body {
     width: 75%;
     margin-left: 25%;
     margin-top: 9vh;
+  }
+
+  #form-properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
   }
 }

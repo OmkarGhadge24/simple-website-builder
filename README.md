@@ -16,5 +16,5 @@ A **drag-and-drop website builder** that allows users to create simple web layou
 
 ## Demo
 
-> [🔗 Live Demo](#)
+> [Live Demo](https://omkarghadge24.github.io/simple-website-builder/)
 
